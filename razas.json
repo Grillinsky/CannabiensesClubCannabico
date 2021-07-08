@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "nombre": "SxW",
+        "indica": "80%",
+        "sativa": "20%",
+        "descripcion" : "Sunday x Wedding es una combinacion de razas lo que sea",
+        "imagen": "/CSS/imagenes/Malibu.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Ak47",
+        "indica": "80%",
+        "sativa": "20%",
+        "descripcion" : "Sunday x Wedding es una combinacion de razas lo que sea",
+        "imagen": "/CSS/imagenes/Malibu.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Lemon Haze",
+        "indica": "80%",
+        "sativa": "20%",
+        "descripcion" : "Sunday x Wedding es una combinacion de razas lo que sea",
+        "imagen": "/CSS/imagenes/Malibu.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Malibu",
+        "indica": "80%",
+        "sativa": "20%",
+        "descripcion" : "Sunday x Wedding es una combinacion de razas lo que sea",
+        "imagen": "/CSS/imagenes/Malibu.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Y",
+        "indica": "80%",
+        "sativa": "20%",
+        "descripcion" : "Sunday x Wedding es una combinacion de razas lo que sea",
+        "imagen": "/CSS/imagenes/Malibu.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Blueberry",
+        "indica": "80%",
+        "sativa": "20%",
+        "descripcion" : "Sunday x Wedding es una combinacion de razas lo que sea",
+        "imagen": "/CSS/imagenes/Malibu.jpg"
+    }
+]
