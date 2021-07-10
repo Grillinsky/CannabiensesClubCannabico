@@ -16,9 +16,9 @@ body{
     /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(11,11,14,1) 98%, rgba(225,245,245,1) 100%); */
     color: white;
 }
-.cooperBlackSpan{
+.zeroPercent{
     font-family: CooperBlack;
-    font-size: 4.3em;
+    font-size: 4.6em;
 }
 header{    display: none;}
 .navBar{
@@ -30,7 +30,7 @@ header{    display: none;}
     display: flex;
     color: white;
     /* background: rgb(0,0,10, 0.5) ; */
-    background: rgba( 255, 255, 255, 0.05 );
+    background: rgba( 255, 255, 255, 0.09 );
     backdrop-filter: blur( 10.5px );
     -webkit-backdrop-filter: blur( 10.5px );
     border-radius: 10px;
@@ -63,9 +63,10 @@ header{    display: none;}
 }
 
 .home{
+    margin-top: 10vh;
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 140vh;
     background-image:url(/CSS/imagenes/IMG_8949\ 2.jpeg);
     background-size: 100vw;
     justify-content: center;
@@ -75,28 +76,40 @@ header{    display: none;}
     width: 30vw;
     font-family: PTSans;
     align-self: flex-start;
-    margin-top: 15vh;
+    margin-top: 35vh;
+}
+.historiaLeft h2{
+    font-size: 2.6em;
+    text-align: justify;
 }
 .historiaCenter{
     font-family: CooperBlack;
-    font-size: 1.6em;
     text-align: center;
+    margin-top: 40vh;
     height: 30vw;
     width: 30vw;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     align-self: center;
     box-shadow: 0 8px 32px 0 rgba(47, 49, 78, 0.77);
     display: flex;
     flex-direction: column;
 }
+.historiaCenter h2{
+    color:rgba(0, 0, 0, 0.9);
+    margin: auto;
+    font-size: 2.5em;
+}
 
 .historiaRight{
     font-family: PTSans;
-    height: 40vh;
+    height: 30vh;
     width: 30vw;
-    margin-bottom: 10vh;
-    background-color: rgba(36, 170, 36, 0.1);
+    margin-bottom: 5vh;
+    /* background-color: rgba(36, 170, 36, 0.1); */
     align-self: flex-end;
+}
+.historiaRight p{
+    font-size: 1.2em;
 }
 .circle{
     border-radius: 50%;
@@ -129,6 +142,8 @@ title {
     grid-template-rows: 90vh;
     grid-template-areas: "listado card";
     margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
     align-content: center;
     box-shadow: 0 4px 16px 0 rgba(7, 9, 8, 0.77);
 }
@@ -142,7 +157,7 @@ title {
 .listado h2{
     font-family: CooperBlack;
     text-align: center;
-    font-size: 2.7em;
+    font-size: 2.9em;
     margin-bottom: 1em;
 }
 .listado ol{
@@ -180,9 +195,9 @@ title {
     border-radius: 12px;
     text-align: center;
     height: 90%;
-    width: 70%;
+    width: 72%;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     /*  background-color:rgba(21, 28, 34, 0.6);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s; */
@@ -193,7 +208,7 @@ title {
     border-radius: 10px;
 }
 .cardTitle{
-    font-size: 2em;
+    font-size: 2.2em;
     margin-top: 2%;
     margin-bottom: 0%;
 }
@@ -210,7 +225,7 @@ title {
     width: 72%;
     margin: auto;
     margin-top: 0%;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 0 8px 32px 0 rgba(67, 69, 68, 0.37);
 }
@@ -236,6 +251,37 @@ title {
 .conocenos{
     height: 100vh;
     width: 100vw;
+}
+.conocenosCard{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0% 8%;
+}
+#nico{
+    flex-direction: row-reverse;
+}
+.conocenosCardImg{
+    align-self: center;
+    width: 20vw;
+    height: 20vw;
+    margin: 0% 5%;
+}
+.conocenosCardDescription{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 2em;
+}
+.conocenosCardDescription h2{
+    font-size: 2.6em;
+}
+.conocenosCardDescription p{
+    align-self: flex-start;
+    font-size: 1.3em;
+    line-height: 1.5em;
 }
 .contacto{
     height: 100vh;
