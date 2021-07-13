@@ -16,7 +16,7 @@
             </div>
             <div class="navLinks" id="navLinks">
                 <!-- Aca los links a las sections -->
-                <ul><li><a href=""> Home</a></li><li><a href=""> Razas</a></li><li><a href="">Conocenos</a></li><li><a href=""> Contactanos</a></li></ul></div>
+                <ul><li><a href="#Home"> Home</a></li><li><a href="#Razas"> Razas</a></li><li><a href="#Conocenos">Conocenos</a></li><li><a href="#Contacto"> Contactanos</a></li></ul></div>
         </nav>
     </header> 
     <main>
@@ -28,7 +28,7 @@
                 </h2><!--  leaf Icon -->
             </div>
             <div class="historiaCenter circle">
-                <h2>Club cannabico<br> <span class="zeroPercent">0</span> <span> %</span><br> impacto cero</h2>
+                <h2>Primer club<br> <span class="zeroPercent">0</span> <span> %</span><br> impacto cero</h2>
             </div>
             <div class="historiaRight">
                 <h2>Nuestro Compromiso</h2>
@@ -37,10 +37,10 @@
                 Control de plagas ecológica.<br>
                 100% del envasado para socios reutilizable. <br>
                 Producción exterior <br>
-                Producción solar de energia para secado y curado 
+                Producción de energia solar para secado y curado 
                 </p>
         </section>
-        <section class="razas" id="razas">
+        <section class="razas" id="Razas">
             <!-- Dividido en 50%-50%, un lado es listado de razas como listado de temas, el otro es donde se muestra la raza seleccionada -->
             <div class="listado" id="listadoRazas">
                 <h2>Conoce nuestras <span class="sombra"> Razas</span></h2>
@@ -66,7 +66,7 @@
                     <div class="indicaSativa">
                         <span>50% indica</span><span>50% sativa</span>
                     </div>
-                    <p>Malibu Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ullam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, molestiae?</p>
+                    <p>La Malibu es una hibrida de genetica Indica dominante única. Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tarde</p>
 
                 </div>
                 <div class="cardIcons">
@@ -77,7 +77,7 @@
             </div></div>
         </section>
 
-        <section class="conocenos" id="conocenos">
+        <section class="conocenos" id="Conocenos">
             <!-- Foto y pequeña historia de rodri y nico -->
             <div id="rodri" class="conocenosCard">
                 <img src="/CSS/imagenes/Avatar_Rodrigo_2.png" alt="Imagen de Rodrigo, fundador del Club" class="conocenosCardImg circle">
@@ -94,17 +94,38 @@
                 </div>
             </div>
         </section>
-        <section class="contacto" id="contacto">
+        <section class="contacto" id="Contacto">
+            <div class="neon"><h2>HAY VACANTES</h2></div>
+            <h3>¿Querés formar parte de Cannabienses?</h3>
             <!-- Formulario de contacto, cartel de "HAY VACANTE" -->
             <div class="formulario">
-                <form action=""></form>
+                <form action="">
+                    
+                    <input type="text" name="correoInput" id="correoInput" placeholder="Ingresa tu Correo Electronico"><button type="submit">Enviar</button>
+                </form>
             </div>
-            <div id="redes">
-                <!-- Fotos / link a instagram -->
+            <div class="redes" id="redes"><!-- Fotos / link a instagram -->
+                <!-- <h4>
+                    Encontranos en:
+                </h4> -->
+                <a href=""><i class="fa fa-instagram fa-3x"></i></a>
+                <a href=""><i class="fa fa-instagram fa-3x"></i></a>
+                <a href=""><i class="fa fa-instagram fa-3x"></i></a>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="datosDesarrollador">
+            <h5>HTML, CSS &amp; JS by <a id="linkPortafolio" target="_blank" href="#">Martin Grillo</a> </h5>
+            <div class="redesDesarrollador">
+                <a target="_blank" href="https://css-tricks.com/how-to-create-neon-text-with-css/"><i class="fa fa-github "></i></a>
+                <a target="_twitter" href="https://css-tricks.com/how-to-create-neon-text-with-css/"><i class="fa fa-linkedin "></i></a>                <a target="_blank" href="https://css-tricks.com/how-to-create-neon-text-with-css/"><i class="fa fa-linkedin "></i></a>
+            </div>
+        </div>
+        <div class="datosClub">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, dolorum.</p>
+        </div>
+    </footer>
 
     <script src="https://kit.fontawesome.com/37b6b13bc4.js" crossorigin="anonymous"></script>
 </body>

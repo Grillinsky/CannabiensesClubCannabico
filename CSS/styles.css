@@ -6,6 +6,10 @@
     font-family: PTSans;
     src: url(/CSS/PT_Sans/PTSans-Regular.ttf);
 }
+@font-face {
+    font-family: Kaushan;
+    src: url(/CSS/Kaushan_Script/KaushanScript-Regular.ttf);
+}
 html, body{
     margin: 0%;
     overflow-x: hidden;
@@ -17,10 +21,11 @@ body{
     color: white;
 }
 .zeroPercent{
-    font-family: CooperBlack;
-    font-size: 4.6em;
+    font-family: Kaushan;
+    font-size: 4em;
 }
-header{    display: none;}
+/*                                    HEADER / NAV                                   */
+/* header{    display: none;} */
 .navBar{
     z-index: 1000;
     position:fixed;
@@ -35,8 +40,21 @@ header{    display: none;}
     -webkit-backdrop-filter: blur( 10.5px );
     border-radius: 10px;
 }
+
 .logo{
     width: 30vw;
+}
+.title h1{
+    font-family: CooperBlack;
+    font-size: 6em;
+    line-height: .9em;
+    color: white;
+    padding: .2em;
+    margin: 0%;
+}
+title {
+    width: 50%;
+    padding: 0%;
 }
 .navLinks{
     width: 50vw;
@@ -54,14 +72,26 @@ header{    display: none;}
     text-align: right;
     font-size: 1.5em;
 }
-.navLinks a:hover{
-    text-decoration: solid white;
+.navLinks li:hover{
+    scale: 1.01;
+    text-shadow:
+    0 0 2px #fff,
+    0 0 3px #fff,
+    0 0 7px #fff,
+    0 0 15px #ffa,
+    0 0 25px #ffa,
+    0 0 30px #ffa,
+    0 0 37px #ffa,
+    0 0 50px #ffa;
 }
+
 .navLinks a{
     text-decoration: none;
     color: white;
 }
+/*                                        MAIN                                      */
 
+/*                   HOME                    */
 .home{
     margin-top: 10vh;
     display: flex;
@@ -79,7 +109,7 @@ header{    display: none;}
     margin-top: 35vh;
 }
 .historiaLeft h2{
-    font-size: 2.6em;
+    font-size: 2.7em;
     text-align: justify;
 }
 .historiaCenter{
@@ -105,7 +135,6 @@ header{    display: none;}
     height: 30vh;
     width: 30vw;
     margin-bottom: 5vh;
-    /* background-color: rgba(36, 170, 36, 0.1); */
     align-self: flex-end;
 }
 .historiaRight p{
@@ -113,25 +142,21 @@ header{    display: none;}
 }
 .circle{
     border-radius: 50%;
+    /* box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #fff,
+    0 0 0.8rem #fff,
+    0 0 2.8rem #fff,
+    inset 0 0 1.3rem #fff; */
 }
-.title h1{
-    font-family: CooperBlack;
-    font-size: 6em;
-    line-height: .9em;
-    color: white;
-    padding: .2em;
-    margin: 0%;
-}
-title {
-    width: 50%;
-    padding: 0%;
-}
+
 .description{
     text-align: center;
     width: 50%;
     z-index: 1;
 
 }
+/*                         RAZAS                       */
 .razas{
     border-radius: 12px;
     background-color: rgb(0, 0, 1, 0.2);
@@ -146,6 +171,12 @@ title {
     margin-bottom: 2%;
     align-content: center;
     box-shadow: 0 4px 16px 0 rgba(7, 9, 8, 0.77);
+    /* box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #4613fe,
+    0 0 0.8rem #4613fe,
+    0 0 2.8rem #4613fe,
+    inset 0 0 1.3rem #4613fe; */
 }
 .listado{
     height: 100%;
@@ -206,6 +237,7 @@ title {
     backdrop-filter: blur( 7.0px );
     -webkit-backdrop-filter: blur( 7.0px );
     border-radius: 10px;
+    
 }
 .cardTitle{
     font-size: 2.2em;
@@ -246,7 +278,7 @@ title {
     justify-content: space-evenly;
 }
 
-
+/*                      CONOCENOS                        */
 
 .conocenos{
     height: 100vh;
@@ -258,6 +290,9 @@ title {
     flex-direction: row;
     justify-content: flex-start;
     padding: 0% 8%;
+}
+.conocenosCard:hover{
+    box-shadow: 0 8px 32px 0 rgba(67, 69, 68, 0.07); ;
 }
 #nico{
     flex-direction: row-reverse;
@@ -277,16 +312,125 @@ title {
 }
 .conocenosCardDescription h2{
     font-size: 2.6em;
+    margin: 0em;
 }
 .conocenosCardDescription p{
     align-self: flex-start;
+    letter-spacing: 1.6px;
     font-size: 1.3em;
     line-height: 1.5em;
 }
+/*                   CONTACTO              */
+
 .contacto{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contacto h3{
+    margin-top: 3em;
+    margin-bottom: 0%;
+}
+.neon{
+    margin: 1em 0em;
+    font-size: 5em;
+    letter-spacing: 3px;
+    transform: skewy(-9deg) skewX(-20deg);
+    border: 1px rgb(255, 208, 0) solid;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem rgb(248, 243, 166),
+    0 0 2rem rgb(248, 243, 166),
+    0 0 0.8rem rgb(248, 243, 166),
+    0 0 2.8rem rgb(248, 243, 166),
+    inset 0 0 1.3rem rgb(248, 243, 166);
+}
+.neon h2{
+    margin: .2em .5em;
+    justify-self: start;
+    font-family: PTSans;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 0em 0em 3em 0em;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius: 4px;
+}
+input{
+    width: 40em;
+    height: 2.5em;
+    margin: 0%;
+    font-size: 1.2em;
+    border: none;
+}
+::placeholder{
+    font-size: 1.1em;
+    text-indent: .4em;
+}
+button{
+    color: white;
+    background-color: rgb(2, 4, 8);
+    border: none;
+    font-size: 1.2em;
+    width: 5em;
+}
+button:hover{
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+    scale: 1.02;
 }
 .sombra{
     text-shadow:  -6px 3px rgba(128, 142, 155,0.8);
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+}
+.redes a{
+    color: white;
+    margin: 1em;
+}
+/*                                    FOOTER                                    */
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    width: 100vw;
+}
+.datosDesarrollador{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.datosDesarrollador h5{
+    text-align: center;
+}
+.redesDesarrollador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.redesDesarrollador a{
+    margin: 1.5em;
+    color: blanchedalmond;
+}
+.datosClub{
+    width: 50%;
+
 }
