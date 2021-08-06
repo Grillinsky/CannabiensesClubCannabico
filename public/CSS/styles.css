@@ -17,9 +17,9 @@ html, body{
 }
 body{
     background-image: url(/CSS/imagenes/chalkboard.jpg);
-    /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(11,11,14,1) 98%, rgba(225,245,245,1) 100%); */
     color: white;
 }
+@media screen and (min-with: 800px) {
 .zeroPercent{
     font-family: Kaushan;
     font-size: 4em;
@@ -433,4 +433,7 @@ footer{
 .datosClub{
     width: 50%;
 
+}
+
+    
 }
