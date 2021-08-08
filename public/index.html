@@ -12,11 +12,20 @@
     <header>
         <nav class="navBar">
             <div class="title" id="title">
-                <h1>Club <br> Cannabico <br> Cannabienses</h1>
+                <h1 class="titleResponsive">Club</h1>
+                <h1 class="titleResponsive">Cannabico</h1>
+                <h1> Cannabienses</h1>
             </div>
-            <div class="navLinks" id="navLinks">
+            <div class="navLinks">
+                <div onclick="showLinks()" id="responsive"><i class="fas fa-bars fa-2x"></i></div>
                 <!-- Aca los links a las sections -->
-                <ul><li><a href="#Home"> Home</a></li><li><a href="#Razas"> Razas</a></li><li><a href="#Conocenos">Conocenos</a></li><li><a href="#Contacto"> Contactanos</a></li></ul></div>
+                <ul id="navLinksUl">
+                    <li class="navLinksLi"><a onclick="hideLinks()" href="#Home"> Home</a></li>
+                    <li class="navLinksLi"><a href="#Razas" onclick="hideLinks()"> Razas</a></li>
+                    <li class="navLinksLi"><a href="#Conocenos">Conocenos</a></li>
+                    <li class="navLinksLi"><a href="#Contacto"> Contactanos</a></li>
+                </ul>
+            </div>
         </nav>
     </header> 
     <main>
@@ -138,5 +147,9 @@
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
     <script src="https://kit.fontawesome.com/37b6b13bc4.js" crossorigin="anonymous"></script>
+
+    <script src="/main.js">
+
+    </script> 
 </body>
 </html>
