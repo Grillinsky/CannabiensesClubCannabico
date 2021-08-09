@@ -92,11 +92,92 @@ body{
     0 0 50px #ffa;
 }
 
-@media (min-width: 800px) {
+.home{
+    font-family: PTSans;
+    display: flex;
+    flex-direction: column;
+    height: 115vh;
+    background-image:url(/CSS/imagenes/IMG_8949\ 2.jpeg);
+    background-size: 150vh;
+    background-position:bottom;
+    justify-content: space-between;
+    align-items: center;
+}
 .zeroPercent{
     font-family: Kaushan;
-    font-size: 4em;
+    font-size: 6rem;
 }
+.historiaLeft{
+    width: 80%;
+    height: 35vh;
+    display: flex;
+    align-items: flex-end;
+}
+.historiaLeft h2{
+    font-size: 7vw;
+    margin-bottom: 1vh;
+    text-align: justify;
+}
+.historiaCenter{
+    font-family: CooperBlack;
+    text-align: center;
+    height: 80vw;
+    width: 80vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 .2rem rgba(255, 255, 255, 0.9),
+    0 8px 32px 0 rgba(47, 49, 78, 0.77),
+    0 0 .2rem rgba(255, 255, 255, 0.9),
+    0 0 2rem #fff,
+    0 0 0.8rem rgba(255, 255, 255, 0.9),
+    0 0 2.8rem #fff,
+    inset 0 0 1.3rem rgba(255, 255, 255, 0.9);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.historiaCenter h2{
+    color:rgba(0, 0, 0, 0.9);
+    margin: auto;
+    font-size: 7vw;
+}
+.circle{
+    border-radius: 50%;
+}
+.sombra{
+    text-shadow:  -3px 2px rgba(78, 92, 105,0.8);
+    /* 0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #ffe,
+    0 0 9px #ffe,
+    0 0 10px #ffe,
+    0 0 17px #ffe,
+    0 0 20px #ffe; */
+}
+.historiaRight{
+    margin-bottom: 1vh;
+    align-self: center;
+}
+.historiaRight p{
+    font-size: 1rem;
+}
+
+/* ACCESSIBILITY */
+.hide-element {
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; 
+} 
+
+@media (min-width: 800px) {
+
 
 /*                                    HEADER / NAV                                   */
 /* header{    display: none;} */
@@ -142,7 +223,6 @@ body{
 
 /*                   HOME                    */
 .home{
-    display: flex;
     flex-direction: row;
     height: 140vh;
     background-image:url(/CSS/imagenes/IMG_8949\ 2.jpeg);
@@ -152,34 +232,17 @@ body{
 .historiaLeft{
     height: 60vh;
     width: 30vw;
-    font-family: PTSans;
     align-self: flex-start;
     margin-top: 35vh;
 }
-.historiaLeft h2{
-    font-size: 2.7em;
-    text-align: justify;
-}
 .historiaCenter{
-    font-family: CooperBlack;
-    text-align: center;
     margin-top: 40vh;
     height: 30vw;
     width: 30vw;
-    background-color: rgba(255, 255, 255, 0.8);
-    align-self: center;
-    box-shadow: 0 8px 32px 0 rgba(47, 49, 78, 0.77);
-    display: flex;
-    flex-direction: column;
-}
-.historiaCenter h2{
-    color:rgba(0, 0, 0, 0.9);
-    margin: auto;
-    font-size: 2.5em;
 }
 
+
 .historiaRight{
-    font-family: PTSans;
     height: 30vh;
     width: 30vw;
     margin-bottom: 5vh;
@@ -188,15 +251,7 @@ body{
 .historiaRight p{
     font-size: 1.2em;
 }
-.circle{
-    border-radius: 50%;
-    /* box-shadow: 0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem #fff,
-    0 0 0.8rem #fff,
-    0 0 2.8rem #fff,
-    inset 0 0 1.3rem #fff; */
-}
+
 
 .description{
     text-align: center;
@@ -443,9 +498,7 @@ button:hover{
     0 0 151px #0fa;
     scale: 1.02;
 }
-.sombra{
-    text-shadow:  -6px 3px rgba(128, 142, 155,0.8);
-}
+
 .redes{
     display: flex;
     flex-direction: row;
