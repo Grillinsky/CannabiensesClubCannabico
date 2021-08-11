@@ -77,6 +77,7 @@ body{
 }
 #responsive{
     align-self: flex-end;
+    margin-right: 3vw;
 }
 
 .navLinks li:active{
@@ -242,7 +243,7 @@ body{
     /*  background-color:rgba(21, 28, 34, 0.6);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s; */
-    background: rgba( 255, 255, 255, 0.05 );
+    background: rgba( 255, 255, 255, .029 );
     box-shadow: 0 8px 32px 0 rgba(27, 29, 28, 0.37)
     0 18px 52px 10px rgba(27, 29, 28, 0.37);
     backdrop-filter: blur( 3.0px );
@@ -251,37 +252,32 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 .cardTitle{
     font-size: 8vw;
-    margin-top: 5%;
-    margin-bottom: 0%;
+    margin: 2%;
 }
 .cardImg{
-    max-width: 80%;
-    margin-bottom: 5%;
+    max-width: 70%;
     border-radius: 10px 10px 10px 10px;
 }
 .cardDescription{
-    height: 9em;
     width: 90%;
-    margin-top: 0%;
 }
 .indicaSativa{
-    margin: 0%;
     display: flex;
-    justify-content: space-around;
+    margin: 2%;
 }
 #indica{
     background-color: #0fa;
-    width: 20%;
+    width: 30%;
 }
 #sativa{
     background-color: tomato;
-    width: 80%;
+    width: 70%;
 }
 .cardDescription p{
-    margin: 2%;
     text-align: justify;
 }
 .cardIcons{
@@ -289,6 +285,137 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.conocenos{
+    height: 140vh;
+    padding-block: 10%;
+}
+.conocenosCard{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#nico{
+    flex-direction: column;
+}
+.conocenosCardImg{
+    align-self: center;
+    width: 40vw;
+    height: 40vw;
+}
+
+.conocenosCardDescription{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0em 2em;
+}
+.conocenosCardDescription h2{
+    text-align: center;
+    font-size: 8vw;
+    margin: 0em;
+}
+.conocenosCardDescription p{
+    text-align: justify;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+/*                      CONTACTO                  */
+.contacto{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.contacto h3{
+    font-size: 5vw;
+    margin: 0%;
+}
+.neon{
+    margin: 0em 0em;
+    font-size: 6vw;
+    letter-spacing: 3px;
+    transform: skewy(-9deg) skewX(-20deg);
+    border: 1px rgba(255, 208, 0, 0.8) solid;
+    box-shadow: 0 0 .15rem #fff,
+    0 0 .15rem rgb(248, 243, 166),
+    0 0 1.7rem rgb(248, 243, 166),
+    0 0 0.6rem rgb(248, 243, 166),
+    0 0 2.6rem rgb(248, 243, 166),
+    inset 0 0 1.1rem rgb(248, 243, 166);
+    animation: pulse 0.29s ease-in-out infinite alternate;
+}
+.neon h2{
+    margin: .2rem .5rem;
+    font-family: PTSans;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+input{
+    width: 75%;
+    margin: 0%;
+    font-size: 1.2rem;
+    border: none;
+}
+::placeholder{
+    font-size: 1rem;
+    text-indent: .4em;
+}
+button{
+    color: white;
+    background-color: rgb(2, 4, 8);
+    border: none;
+    font-size: 1.2em;
+    width: 25%;
+}
+button:hover{
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+button:active{
+    outline: 1px white solid;
+    outline-offset: 5px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+}
+.redes a{
+    color: white;
+    margin: 1em;
+}
+@keyframes pulse {
+    to{
+        box-shadow: 0 0 .1rem #fff,
+        0 0 .1rem rgb(248, 243, 166),
+        0 0 1.9rem rgb(248, 243, 166),
+        0 0 0.7rem rgb(248, 243, 166),
+        0 0 2.7rem rgb(248, 243, 166),
+        inset 0 0 1.2rem rgb(248, 243, 166);
+    }
 }
 @media (min-width: 800px) {
 
@@ -496,8 +623,6 @@ body{
     width: 100vw;
 }
 .conocenosCard{
-    height: 50%;
-    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     padding: 0% 8%;
@@ -509,36 +634,27 @@ body{
     flex-direction: row-reverse;
 }
 .conocenosCardImg{
-    align-self: center;
     width: 20vw;
     height: 20vw;
     margin: 0% 5%;
 }
 .conocenosCardDescription{
     width: 40vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: auto 2em;
 }
 .conocenosCardDescription h2{
+    text-align: inherit;
     font-size: 2.6em;
-    margin: 0em;
 }
 .conocenosCardDescription p{
     align-self: flex-start;
     letter-spacing: 1.6px;
     font-size: 1.3em;
-    line-height: 1.5em;
 }
 /*                   CONTACTO              */
 
 .contacto{
     height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-evenly;
 }
 .contacto h3{
@@ -548,73 +664,16 @@ body{
 .neon{
     margin: 1em 0em;
     font-size: 5em;
-    letter-spacing: 3px;
-    transform: skewy(-9deg) skewX(-20deg);
-    border: 1px rgb(255, 208, 0) solid;
-    box-shadow: 0 0 .2rem #fff,
-    0 0 .2rem rgb(248, 243, 166),
-    0 0 2rem rgb(248, 243, 166),
-    0 0 0.8rem rgb(248, 243, 166),
-    0 0 2.8rem rgb(248, 243, 166),
-    inset 0 0 1.3rem rgb(248, 243, 166);
 }
 .neon h2{
     margin: .2em .5em;
-    justify-self: start;
-    font-family: PTSans;
 }
-.formulario{
-    display: flex;
-    justify-content: center;
-    width: 90vw;
-    margin: 0em 0em 3em 0em;
-}
+
 form{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     border: 3px solid white;
     border-radius: 4px;
 }
-input{
-    width: 40em;
-    height: 2.5em;
-    margin: 0%;
-    font-size: 1.2em;
-    border: none;
-}
-::placeholder{
-    font-size: 1.1em;
-    text-indent: .4em;
-}
-button{
-    color: white;
-    background-color: rgb(2, 4, 8);
-    border: none;
-    font-size: 1.2em;
-    width: 5em;
-}
-button:hover{
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
-    scale: 1.02;
-}
 
-.redes{
-    display: flex;
-    flex-direction: row;
-}
-.redes a{
-    color: white;
-    margin: 1em;
-}
 /*                                    FOOTER                                    */
 footer{
     display: flex;
