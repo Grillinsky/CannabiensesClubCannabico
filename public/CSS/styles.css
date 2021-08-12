@@ -213,7 +213,7 @@ body{
     padding: 2vw;
 }
 .listado li:hover,
-.listado li:active{
+.listado li:focus{
     background-color: rgba(8, 10, 8, 0.1);
     box-shadow: 0 0 .2rem rgba(255, 255, 255, 0.9),
     inset 0 8px 32px 0 rgba(47, 49, 78, 0.77),
@@ -222,6 +222,7 @@ body{
     inset 0 0 0.8rem rgba(255, 255, 255, 0.29),
     inset 0 0 2.8rem rgba(95, 95, 95, 0.29),
     inset 0 0 1.3rem rgba(255, 255, 255, 0.29);
+    cursor: pointer;
 }
 .listado ol{
     border-top: 1px rgba(255, 255, 255, 0.12) solid;
@@ -365,7 +366,7 @@ form{
     flex-direction: row;
     justify-content: center;
     border: 1px solid white;
-    border-radius: 4px;
+
 }
 input{
     width: 75%;
@@ -407,273 +408,6 @@ button:active{
     color: white;
     margin: 1em;
 }
-@keyframes pulse {
-    to{
-        box-shadow: 0 0 .1rem #fff,
-        0 0 .1rem rgb(248, 243, 166),
-        0 0 1.9rem rgb(248, 243, 166),
-        0 0 0.7rem rgb(248, 243, 166),
-        0 0 2.7rem rgb(248, 243, 166),
-        inset 0 0 1.2rem rgb(248, 243, 166);
-    }
-}
-@media (min-width: 800px) {
-
-
-/*                                    HEADER / NAV                                   */
-/* header{    display: none;} */
-.title{
-    display: flex;
-    flex-direction: column;
-    padding-left: .5rem;
-}
-.title h1{
-    padding: .0em;
-    font-size: 8vw;
-}
-#responsive{
-    display: none;
-}
-.navLinks{
-    width: 50vw;
-}
-#navLinksUl{
-    margin: 0em 1em;
-    padding: 0em;
-    display: inherit;
-    align-self: flex-end;
-}
-.navLinksLi{
-    line-height: 140%;
-    font-size: 3vw;
-    transition: 0.3s;
-}
-.navLinks li:hover{
-    scale: 1.1;
-    text-shadow:
-    0 0 2px #fff,
-    0 0 3px #fff,
-    0 0 7px #fff,
-    0 0 15px #ffa,
-    0 0 25px #ffa,
-    0 0 30px #ffa,
-    0 0 37px #ffa,
-    0 0 50px #ffa;
-}
-/*                                        MAIN                                      */
-
-/*                   HOME                    */
-.home{
-    flex-direction: row;
-    height: 140vh;
-    background-size: 100vw;
-    justify-content: center;
-}
-.historiaLeft{
-    height: 60vh;
-    width: 30vw;
-    align-self: flex-start;
-    margin-top: 35vh;
-}
-.historiaCenter{
-    margin-top: 40vh;
-    height: 30vw;
-    width: 30vw;
-}
-.historiaRight{
-    height: 30vh;
-    width: 30vw;
-    margin-bottom: 5vh;
-    align-self: flex-end;
-}
-.historiaRight p{
-    font-size: 1.2em;
-}
-/* .description{
-    text-align: center;
-    width: 50%;
-    z-index: 1;
-
-} */
-/*                         RAZAS                       */
-.razas{
-    border-radius: 12px;
-    background-color: rgb(0, 0, 1, 0.2);
-    height: 95vh;
-    width: 80vw;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 90vh;
-    grid-template-areas: "listado card";
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    align-content: center;
-    box-shadow: 0 4px 16px 0 rgba(7, 9, 8, 0.77);
-    /* box-shadow: 0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem #4613fe,
-    0 0 0.8rem #4613fe,
-    0 0 2.8rem #4613fe,
-    inset 0 0 1.3rem #4613fe; */
-}
-.listado{
-    height: 100%;
-    min-width: 50%;
-    grid-area: listado;
-    background-color:rgba(107, 125, 138, 0.01);
-}
-
-.listado h2{
-    font-family: CooperBlack;
-    text-align: center;
-    font-size: 2.9em;
-    margin-bottom: 1em;
-}
-.listado ol{
-    margin-left: 1.5em;
-}
-.listado li{
-    /* display: flex;
-    flex-direction: column;
-    list-style: none; 
-    width: 12em;
-    padding: .5em 1em;
-    background-color: rgba(128, 142, 155,0.4);
-    border-radius: 12px;*/
-    border-bottom: 1px solid white;
-    letter-spacing: 2px;
-    text-indent: .4em;
-    text-align:left;
-    font-size: 1.5em;
-    margin: .9em auto;
-}
-.listado li:hover{
-    background-color: rgba(8, 10, 8, 0.1);
-    text-decoration: underline;
-}
-#razasCard{
-    display: flex;
-    flex-direction: column;
-}
-.cardRazas{    
-    background-color:rgba(21, 28, 34, 0.01);
-    grid-area: card;
-    display: flex;
-}
-.card{
-    border-radius: 12px;
-    text-align: center;
-    height: 90%;
-    width: 72%;
-    margin: auto;
-    margin-top: 5%;
-    /*  background-color:rgba(21, 28, 34, 0.6);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s; */
-    background: rgba( 255, 255, 255, 0.05 );
-    box-shadow: 0 8px 32px 0 rgba(27, 29, 28, 0.37);
-    backdrop-filter: blur( 7.0px );
-    -webkit-backdrop-filter: blur( 7.0px );
-    border-radius: 10px;
-    
-}
-.cardTitle{
-    font-size: 2.2em;
-    margin-top: 2%;
-    margin-bottom: 0%;
-}
-.cardImg{
-    max-width: 72%;
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 0%;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: 0 8px 32px 0 rgba(67, 69, 68, 0.37);
-}
-.cardDescription{
-    height: 9em;
-    width: 72%;
-    margin: auto;
-    margin-top: 0%;
-    margin-bottom: 5%;
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 0 8px 32px 0 rgba(67, 69, 68, 0.37);
-}
-.card span{
-    margin: 1em;
-    margin-top: 1em;
-    padding: 1em;
-}
-.cardDescription p{
-    margin: auto;
-    padding: .2em;
-    width: 90%;
-}
-.cardIcons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-/*                      CONOCENOS                        */
-
-.conocenos{
-    height: 100vh;
-    width: 100vw;
-}
-.conocenosCard{
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 0% 8%;
-}
-.conocenosCard:hover{
-    box-shadow: 0 8px 32px 0 rgba(67, 69, 68, 0.07); ;
-}
-#nico{
-    flex-direction: row-reverse;
-}
-.conocenosCardImg{
-    width: 20vw;
-    height: 20vw;
-    margin: 0% 5%;
-}
-.conocenosCardDescription{
-    width: 40vw;
-    margin: auto 2em;
-}
-.conocenosCardDescription h2{
-    text-align: inherit;
-    font-size: 2.6em;
-}
-.conocenosCardDescription p{
-    align-self: flex-start;
-    letter-spacing: 1.6px;
-    font-size: 1.3em;
-}
-/*                   CONTACTO              */
-
-.contacto{
-    height: 100vh;
-    justify-content: space-evenly;
-}
-.contacto h3{
-    margin-top: 3em;
-    margin-bottom: 0%;
-}
-.neon{
-    margin: 1em 0em;
-    font-size: 5em;
-}
-.neon h2{
-    margin: .2em .5em;
-}
-
-form{
-    border: 3px solid white;
-    border-radius: 4px;
-}
-
 /*                                    FOOTER                                    */
 footer{
     display: flex;
@@ -688,20 +422,315 @@ footer{
 }
 .datosDesarrollador h5{
     text-align: center;
+    margin: 0%;
 }
 .redesDesarrollador{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .redesDesarrollador a{
-    margin: 1.5em;
+    margin: 0%;
     color: blanchedalmond;
 }
 .datosClub{
     width: 50%;
 
 }
+@keyframes pulse {
+    to{
+        box-shadow: 0 0 .1rem #fff,
+        0 0 .1rem rgb(248, 243, 166),
+        0 0 1.9rem rgb(248, 243, 166),
+        0 0 0.7rem rgb(248, 243, 166),
+        0 0 2.7rem rgb(248, 243, 166),
+        inset 0 0 1.2rem rgb(248, 243, 166);
+    }
+}
+@media (min-width: 800px) {
 
+
+    /*                                    HEADER / NAV                                   */
+    /* header{    display: none;} */
+    .title{
+        display: flex;
+        flex-direction: column;
+        padding-left: .5rem;
+    }
+    .title h1{
+        padding: .0em;
+        font-size: 8vw;
+    }
+    #responsive{
+        display: none;
+    }
+    .navLinks{
+        width: 50vw;
+    }
+    #navLinksUl{
+        margin: 0em 1em;
+        padding: 0em;
+        display: inherit;
+        align-self: flex-end;
+    }
+    .navLinksLi{
+        line-height: 140%;
+        font-size: 3vw;
+        transition: 0.3s;
+    }
+    .navLinks li:hover{
+        scale: 1.1;
+        text-shadow:
+        0 0 2px #fff,
+        0 0 3px #fff,
+        0 0 7px #fff,
+        0 0 15px #ffa,
+        0 0 25px #ffa,
+        0 0 30px #ffa,
+        0 0 37px #ffa,
+        0 0 50px #ffa;
+    }
+/*                                        MAIN                                      */
+
+    /*                   HOME                    */
+    .home{
+        flex-direction: row;
+        height: 140vh;
+        background-size: 100vw;
+        justify-content: center;
+    }
+    .historiaLeft{
+        height: 60vh;
+        width: 30vw;
+        align-self: flex-start;
+        margin-top: 35vh;
+    }
+    .historiaCenter{
+        margin-top: 40vh;
+        height: 30vw;
+        width: 30vw;
+    }
+    .historiaRight{
+        height: 30vh;
+        width: 30vw;
+        margin-bottom: 5vh;
+        align-self: flex-end;
+    }
+    .historiaRight p{
+        font-size: 1.2em;
+    }
+/* .description{
+    text-align: center;
+    width: 50%;
+    z-index: 1;
+
+} */
+    /*                         RAZAS                       */
+    .razas{
+        border-radius: 12px;
+        background-color: rgb(0, 0, 1, 0.2);
+        height: 95vh;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 90vh;
+        grid-template-areas: "listado card";
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        align-content: center;
+        box-shadow: 0 4px 16px 0 rgba(7, 9, 8, 0.77);
+        /* box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #4613fe,
+        0 0 0.8rem #4613fe,
+        0 0 2.8rem #4613fe,
+        inset 0 0 1.3rem #4613fe; */
+    }
+    .listado{
+        height: 100%;
+        min-width: 50%;
+        grid-area: listado;
+        background-color:rgba(107, 125, 138, 0.01);
+    }
+
+    .listado h2{
+        font-family: CooperBlack;
+        text-align: center;
+        font-size: 2.9em;
+        margin-bottom: 1em;
+    }
+    .listado ol{
+        margin-left: 1.5em;
+    }
+    .listado li{
+        /* display: flex;
+        flex-direction: column;
+        list-style: none; 
+        width: 12em;
+        padding: .5em 1em;
+        background-color: rgba(128, 142, 155,0.4);
+        border-radius: 12px;*/
+        border-bottom: 1px solid white;
+        letter-spacing: 2px;
+        text-indent: .4em;
+        text-align:left;
+        font-size: 1.5em;
+        margin: .9em auto;
+    }
+    .listado li:hover{
+        background-color: rgba(8, 10, 8, 0.1);
+        text-decoration: underline;
+    }
+    #razasCard{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardRazas{    
+        background-color:rgba(21, 28, 34, 0.01);
+        grid-area: card;
+        display: flex;
+    }
+    .card{
+        border-radius: 12px;
+        text-align: center;
+        height: 90%;
+        width: 72%;
+        margin: auto;
+        margin-top: 5%;
+        /*  background-color:rgba(21, 28, 34, 0.6);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s; */
+        background: rgba( 255, 255, 255, 0.05 );
+        box-shadow: 0 8px 32px 0 rgba(27, 29, 28, 0.37);
+        backdrop-filter: blur( 7.0px );
+        -webkit-backdrop-filter: blur( 7.0px );
+        border-radius: 10px;
+        
+    }
+    .cardTitle{
+        font-size: 2.2em;
+        margin-top: 2%;
+        margin-bottom: 0%;
+    }
+    .cardImg{
+        max-width: 72%;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 0 8px 32px 0 rgba(67, 69, 68, 0.37);
+    }
+    .cardDescription{
+        height: 9em;
+        width: 72%;
+        margin: auto;
+        margin-top: 0%;
+        margin-bottom: 5%;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 0 8px 32px 0 rgba(67, 69, 68, 0.37);
+    }
+    .card span{
+        margin: 1em;
+        margin-top: 1em;
+        padding: 1em;
+    }
+    .cardDescription p{
+        margin: auto;
+        padding: .2em;
+        width: 90%;
+    }
+    .cardIcons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /*                      CONOCENOS                        */
+
+    .conocenos{
+        height: 100vh;
+        width: 100vw;
+    }
+    .conocenosCard{
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0% 8%;
+    }
+    .conocenosCard:hover{
+        box-shadow: 0 8px 32px 0 rgba(67, 69, 68, 0.07); ;
+    }
+    #nico{
+        flex-direction: row-reverse;
+    }
+    .conocenosCardImg{
+        width: 20vw;
+        height: 20vw;
+        margin: 0% 5%;
+    }
+    .conocenosCardDescription{
+        width: 40vw;
+        margin: auto 2em;
+    }
+    .conocenosCardDescription h2{
+        text-align: inherit;
+        font-size: 2.6em;
+    }
+    .conocenosCardDescription p{
+        align-self: flex-start;
+        letter-spacing: 1.6px;
+        font-size: 1.3em;
+    }
+    /*                   CONTACTO              */
+
+    .contacto{
+        height: 100vh;
+        justify-content: space-evenly;
+    }
+    .contacto h3{
+        margin-top: 3em;
+        margin-bottom: 0%;
+    }
+    .neon{
+        margin: 1em 0em;
+        font-size: 5em;
+    }
+    .neon h2{
+        margin: .2em .5em;
+    }
+
+    form{
+        border: 3px solid white;
+        border-radius: 4px;
+    }
+
+    /*                                    FOOTER                                    */
+    footer{
+        display: flex;
+        flex-direction: row;
+        height: 15vh;
+        width: 100vw;
+    }
+    .datosDesarrollador{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .datosDesarrollador h5{
+        text-align: center;
+    }
+    .redesDesarrollador{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .redesDesarrollador a{
+        margin: 1.5em;
+        color: blanchedalmond;
+    }
+    .datosClub{
+        width: 50%;
+
+    }
     
 }

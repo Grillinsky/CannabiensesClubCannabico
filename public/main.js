@@ -8,15 +8,17 @@ var icon = document.getElementById("responsive");
 var links = document.getElementById("navLinksUl");
 var responsive = document.getElementById("responsive");
 var linksLi = document.querySelectorAll(".navLinksLi");
-//     //RESPONSIVE NAV BAR
-// responsive.addEventListener("click",
-// function showLinks(){
-// icon.style.display = "none";
-// links.style.display = "inherit";
-// for(var i = 0; i < span.length; i ++){
-//             span[i].style.fontSize = "8vw";
-//     };
-// });
+var card = document.getElementById("razasCard");
+var name = document.getElementById("name");
+var image = document.getElementById("image");
+var indica = document.getElementById("indica");
+var sativa = document.getElementById("sativa");
+var description = document.getElementById("description");
+var thc = document.getElementById("thc");
+var principal = document.getElementById("principal");
+var secondary = document.getElementById("secondary");
+
+
     //TITLE SHRINK ON SCROLL
     if (width > 800){
         window.onscroll = function() {scrollFunctionLarge()};
@@ -65,18 +67,4 @@ var linksLi = document.querySelectorAll(".navLinksLi");
             };
     }
 
-// linksLi.addEventListener("click", 
-// function hideLinks(){
-//     icon.style.display = "initial";
-//     links.style.display = "none";
-//     for(var i = 0; i < span.length; i ++){
-//                 span[i].style.fontSize = "0px";
-//         };
-// });
-
-
-// if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-//         document.getElementById("title").style.fontSize = "5vw";
-//     }else{
-//         document.getElementById("title").style.fontSize = "10vw"
-//     }
+    
