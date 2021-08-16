@@ -9,7 +9,7 @@ var links = document.getElementById("navLinksUl");
 var responsive = document.getElementById("responsive");
 var linksLi = document.querySelectorAll(".navLinksLi");
 var card = document.getElementById("razasCard");
-var name = document.getElementById("name");
+var nombre = document.getElementById("name");
 var image = document.getElementById("image");
 var indica = document.getElementById("indica");
 var sativa = document.getElementById("sativa");
@@ -18,6 +18,52 @@ var thc = document.getElementById("thc");
 var principal = document.getElementById("principal");
 var secondary = document.getElementById("secondary");
 
+
+// { 
+    
+//     fetch("razas.json")
+//     .then(function(res) {res.json()} )
+//     .then(function(razas){
+//         console.log(razas)
+//     })
+
+    let raza  =  [ {
+        "id": 1,
+        "nombre": "SxW",
+        "indica": "80%",
+        "sativa": "20%",
+        "descripcion" : "Sunday x Wedding es una combinacion de razas lo que sea",
+        "imagen": "/CSS/imagenes/ocean.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Ak47",
+        "indica": "80%",
+        "sativa": "20%",
+        "descripcion" : "Sunday x Wedding es una combinacion de razas lo que sea",
+        "imagen": "/CSS/imagenes/Malibu.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Lemon Haze",
+        "indica": "80%",
+        "sativa": "20%",
+        "descripcion" : "Sunday x Wedding es una combinacion de razas lo que sea",
+        "imagen": "/CSS/imagenes/Malibu.jpg"
+    }]
+
+
+    document.getElementById("sxw").addEventListener("click", function getRazas() {
+
+        // filter(item =>{return item.id === 1})
+        let sw = raza[0]
+            console.log(sw);
+        nombre.innerHTML =  sw.nombre;
+        indica.innerHTML = sw.indica  + "indica";
+        sativa.innerHTML = sw.sativa + "sativa";
+        description.innerHTML = sw.descripcion;
+        image.src = sw.imagen;
+        }  )
 
     //TITLE SHRINK ON SCROLL
     if (width > 800){
@@ -67,4 +113,3 @@ var secondary = document.getElementById("secondary");
             };
     }
 
-    
