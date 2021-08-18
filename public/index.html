@@ -61,12 +61,12 @@
                     <li id="y">Y</li>
                     <li id="ak47">Ak47</li>
                     <li id="platinum">Platinum</li>
-                    <li id="rexog">RCxOG</li>
+                    <li id="rcxog">RCxOG</li>
                     <li id="24kilates">24kilates</li>
 
                 </ol>
             </div>
-            <div class="cardRazas">
+        <div class="cardRazas">
             <div id="razasCard" class="card">
                 <!-- Crea archivo de Json con nombre, foto, descripcion, etc de cada raza y con JS se muestra el seleccionado -->
                 <h3 id="name" class="cardTitle">Malibu</h3>
@@ -79,11 +79,25 @@
 
                 </div>
                 <div class="cardIcons">
-                    <i id="thc" class="fas fa-brain fa-2x"></i>
-                    <i id="principal" class="fas fa-male fa-2x"></i>
-                    <i id="secondary" class="fas fa-battery-full fa-2x"></i>
+                    <div class="iconContainer" id="thc">
+                    <i id="thcIcon" class="fas fa-thermometer-full fa-2x"></i>
+                    <p class="iconContainerText" id="thcText">25% THC</p>
+                    </div>
+                    <div class="iconContainer" id="principal">
+                    <i id="principalIcon" class="fas fa-brain fa-2x"></i>
+                    <p class="iconContainerText" id="principalText">Cerebral</p>
+                    </div>
+                    <div class="iconContainer" id="secondary">
+                    <i id="secondaryIcon" class="fas fa-battery-full fa-2x"></i>
+                    <p class="iconContainerText" id="secondaryText">Energetico</p>
+                    </div>
                 </div>
-            </div></div>
+                <div class="cardNavButtons">
+                    <a href=""><i class="fas fa-chevron-left"></i>Ver Previa</a>
+                    <a href="">Ver Proxima<i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
         </section>
 
         <section class="conocenos" id="conocenos">
@@ -103,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacto" id="Contacto">
+        <section class="contacto" id="contacto">
             <h3>¿Querés formar parte de Cannabienses?</h3>
             <div class="neon"><h2>HAY VACANTES</h2></div>
 
