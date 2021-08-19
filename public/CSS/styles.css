@@ -229,12 +229,10 @@ body{
 }
 
 /* CARD EXPANDED STATE */
-
-/*  CARD CONTRACTED STATE (ONLY SMALL SCREENS) */
-
 .card{
+
     border-radius: 12px;
-    transition: 1.2s;
+    transition: 1s;
     text-align: center;
     height: 85vh;
     margin: auto;
@@ -251,10 +249,17 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
+}
+.closeBtn{
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    font-weight: 900;
 }
 .cardTitle{
     font-size: 8vw;
-    margin: 2%;
+    margin: 1%;
 }
 .cardImg{
     max-width: 70%;
@@ -287,6 +292,70 @@ body{
 .iconContainerText{
     margin: 5% 0%;
 }
+/*  CARD CONTRACTED STATE (ONLY SMALL SCREENS) */
+    /* .cardContracted{
+    border-radius: 12px;
+    transition: 1s;
+    text-align: center;
+    height: 15vh;
+    margin: auto 1em;
+    background: rgba( 255, 255, 255, .029 );
+    box-shadow: 0 8px 32px 0 rgba(27, 29, 28, 0.37)
+    0 18px 52px 10px rgba(27, 29, 28, 0.37);
+    backdrop-filter: blur( 3.0px );
+    -webkit-backdrop-filter: blur( 3.0px );
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.closeBtn{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    font-weight: 900;
+}
+.cardTitleContracted{
+    font-size: 6vw;
+    margin: 1%;
+}
+.cardImgContracted{
+    max-width: 20%;
+    border-radius: 10px 10px 10px 10px;
+}
+.cardDescription{
+    width: 90%;
+}
+.indicaSativaContracted{
+    display: none;
+    margin: 2%;
+}
+#indica{
+    background-color: #0fa;
+    width: 30%;
+}
+#sativa{
+    background-color: tomato;
+    width: 70%;
+}
+.cardDescription p{
+    text-align: justify;
+}
+.cardIcons{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.iconContainerText{
+    margin: 5% 0%;
+}
+ */
+
+        /*               CONOCENOS             */
 .conocenos{
     height: 140vh;
     padding-block: 10%;

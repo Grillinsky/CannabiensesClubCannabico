@@ -13,10 +13,18 @@ var nombre = document.getElementById("name");
 var image = document.getElementById("image");
 var indica = document.getElementById("indica");
 var sativa = document.getElementById("sativa");
-var description = document.getElementById("description");
+var description = document.getElementById("descriptionText");
 var thc = document.getElementById("thc");
+var thcIcon = document.getElementById("thcIcon");
+var thcText = document.getElementById("thcText");
 var principal = document.getElementById("principal");
+var principalIcon = document.getElementById("principalIcon");
+var principalText = document.getElementById("principalText");
 var secondary = document.getElementById("secondary");
+var secondaryIcon = document.getElementById("secondaryIcon");
+var secondaryText = document.getElementById("secondaryText");
+
+
 
 
 // { 
@@ -31,26 +39,44 @@ var secondary = document.getElementById("secondary");
     let raza  =  [ {
         "id": 1,
         "nombre": "Lemon Haze",
-        "indica": "80%",
-        "sativa": "20%",
-        "descripcion" : "Sunday x Wedding es una combinacion de razas Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tarde lo que sea",
-        "imagen": "/CSS/imagenes/MembresiaHeavy.jpg"
+        "indica": "40%",
+        "sativa": "60%",
+        "descripcion" : "La Lemon Haze es una bestia de predominancia sativa que tiene una increíble potencia psicoactiva. El ciego producido por la Lemon Haze es cerebral, energizante, induce la contemplación y ofrece momentos de euforia y psicodelia",
+        "imagen": "/CSS/imagenes/MembresiaHeavy.jpg",
+        "thc-icon": "fas fa-thermometer-three-quarters fa-2x",
+        "tch-text": "21%",
+        "principal-icon": "fas fa-couch fa-2x",
+        "principal-text":"Relajante",
+        "secondary-icon": "fas fa-laugh-beam fa-2x",
+        "secondary-text": "Euforia"
     },
     {
         "id": 2,
         "nombre": "Malibu",
-        "indica": "80%",
-        "sativa": "20%",
+        "indica": "20%",
+        "sativa": "80%",
         "descripcion" : "Sunday x Wedding es una Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tarde combinacion de razas lo que sea",
-        "imagen": "/CSS/imagenes/Malibu.png"
+        "imagen": "/CSS/imagenes/Malibu.png",
+        "thc-icon": "fas fa-thermometer-full fa-2x",
+        "tch-text": "24%",
+        "principal-icon": "fas fa-palette fa-2x",
+        "principal-text":"Creativo",
+        "secondary-icon": "fas fa-comments",
+        "secondary-text": "Hablador"
     },
     {
         "id": 3,
-        "nombre": "Sunday x Wedding",
-        "indica": "80%",
-        "sativa": "20%",
-        "descripcion" : "Sunday x Wedding es una combinacion de razas l Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tardeo que sea",
-        "imagen": "/CSS/imagenes/Exotic.jpg"
+        "nombre": "Sundae x Wedding",
+        "indica": "40%",
+        "sativa": "60%",
+        "descripcion" : "Sunday x Wedding es una combinacion de las razas Sundae Driver y Wedding Cake, los efectos de calmantes y balanceados de la primera y los sabores mandarina y terrozos de la segunda hacen de ésta una combinación imperdible ",
+        "imagen": "/CSS/imagenes/Exotic.jpg",
+        "thc-icon": "fas fa-thermometer-three-quarters fa-2x",
+        "tch-text": "21%",
+        "principal-icon": "fas fa-couch fa-2x",
+        "principal-text":"Relajante",
+        "secondary-icon": "fas fa-balance-scale fa-2x",
+        "secondary-text": "Balanceado"
     },
     {
         "id": 4,
@@ -58,31 +84,55 @@ var secondary = document.getElementById("secondary");
         "indica": "80%",
         "sativa": "20%",
         "descripcion" : "Sunday x v Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tardeWedding es una combinacion de razas lo que sea",
-        "imagen": "/CSS/imagenes/Plutos Fire.jpg"
+        "imagen": "/CSS/imagenes/Plutos Fire.jpg",
+        "thc-icon": "fas fa-thermometer-half fa-2x",
+        "tch-text": "19%",
+        "principal-icon": "fas fa-couch fa-2x",
+        "principal-text":"Relajante",
+        "secondary-icon": "fas fa-laugh-beam fa-2x",
+        "secondary-text": "Euforia"
     },
     {
         "id": 5,
         "nombre": "Y",
         "indica": "80%",
         "sativa": "20%",
-        "descripcion" : "Sunday x Wedding es Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tarde una combinacion de razas lo que sea",
-        "imagen": "/CSS/imagenes/MembresiaMedium.jpg"
+        "descripcion" : "La Y griega es una raza extremadamente potente. Su efecto empieza con una fuerte sacudida energética que lentamente desencadena en un estado de lucidez y relajación. Mantiene un olor clásico a Haze, que se combina con un ligero toque dulzón que la hace destacar.",
+        "imagen": "/CSS/imagenes/MembresiaMedium.jpg",
+        "thc-icon": "fas fa-thermometer-full fa-2x",
+        "tch-text": "25%",
+        "principal-icon": "fas fa-battery-full fa-2x",
+        "principal-text":"Energetico",
+        "secondary-icon": "fas fa-lightbulb fa-2x",
+        "secondary-text": "Lucidez"
     },
     {
         "id": 6,
         "nombre": "Ak47",
         "indica": "80%",
         "sativa": "20%",
-        "descripcion" : "Sunday x Wedding es una Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tarde combinacion de razas lo que sea",
-        "imagen": "/CSS/imagenes/Ak-47.jpg"
+        "descripcion" : "La AK-47 es una de las mejores variedades del mundo y la preferida de muchos. , Con un intenso aroma picante estilo skunk. Puedes apreciar algunos matices cítricos en su fumada. Con un efecto cerebral constante, excelente para actividades creativas",
+        "imagen": "/CSS/imagenes/Ak-47.jpg",
+        "thc-icon": "fas fa-thermometer-full fa-2x",
+        "tch-text": "24% +",
+        "principal-icon": "fas fa-users fa-2x",
+        "principal-text":"Sociable",
+        "secondary-icon": "fas fa-brain fa-2x",
+        "secondary-text": "Cerebral"
     },
     {
         "id": 7,
-        "nombre": "Platinum",
+        "nombre": "Platinum OG",
         "indica": "80%",
         "sativa": "20%",
-        "descripcion" : "Sunday x Wedding es una Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tarde Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tarde combinacion de razas lo que sea",
-        "imagen": "/CSS/imagenes/Prueba.png"
+        "descripcion" : "Tan preciosa como el metal es el nombre. Con un contenido de THC regularmente de 20%. Con breve, embriagador efecto que se convierte en uno poderoso físico de sedación adecuado para el uso durante la noche y para combatir el dolor, el estrés o la ansiedad, haciendo de este precioso cepa de un sólido sanador.",
+        "imagen": "/CSS/imagenes/Prueba.png",
+        "thc-icon": "fas fa-thermometer-three-quarters fa-2x",
+        "tch-text": "22%",
+        "principal-icon": "fas fa-laugh-beam fa-2x",
+        "principal-text":"Euforia",
+        "secondary-icon": "fas fa-couch fa-2x",
+        "secondary-text": "Relajante"
     },
     {
         "id": 8,
@@ -90,7 +140,13 @@ var secondary = document.getElementById("secondary");
         "indica": "80%",
         "sativa": "20%",
         "descripcion" : "Sunday x Wedding e Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tardes una combinacion de razas lo que sea",
-        "imagen": "/CSS/imagenes/ocean.jpg"
+        "imagen": "/CSS/imagenes/ocean.jpg",
+        "thc-icon": "fas fa-thermometer-three-quarters fa-2x",
+        "tch-text": "21%",
+        "principal-icon": "",
+        "principal-text":"",
+        "secondary-icon": "",
+        "secondary-text": ""
     },
     {
         "id": 9,
@@ -98,7 +154,13 @@ var secondary = document.getElementById("secondary");
         "indica": "80%",
         "sativa": "20%",
         "descripcion" : "Sunday x Wedding es Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tarde una combinacion de razas lo que sea",
-        "imagen": "/CSS/imagenes/chalkboard.jpg"
+        "imagen": "/CSS/imagenes/chalkboard.jpg",
+        "thc-icon": "fas fa-thermometer-three-quarters fa-2x",
+        "tch-text": "21%",
+        "principal-icon": "",
+        "principal-text":"",
+        "secondary-icon": "",
+        "secondary-text": ""
     }]
 
 
@@ -118,71 +180,124 @@ var secondary = document.getElementById("secondary");
         sativa.innerHTML = lemonHaze.sativa + "sativa";
         description.innerHTML = lemonHaze.descripcion;
         image.src = lemonHaze.imagen;
+        thcIcon.classList = lemonHaze["thc-icon"];
+        thcText.innerHTML = lemonHaze["tch-text"] + " THC";
+        principalIcon.classList = lemonHaze["principal-icon"];
+        principalText.innerHTML = lemonHaze["principal-text"];
+        secondaryIcon.classList = lemonHaze["secondary-icon"];
+        secondaryText.innerHTML = lemonHaze["secondary-text"];
         }  );
 
     document.getElementById("malibu").addEventListener("click", function getMali() {
         nombre.innerHTML =  malibu.nombre;
-        indica.innerHTML = malibu.indica  + "indica";
-        sativa.innerHTML = malibu.sativa + "sativa";
+        indica.innerHTML = malibu.indica  + " indica";
+        sativa.innerHTML = malibu.sativa + " sativa";
         description.innerHTML = malibu.descripcion;
         image.src = malibu.imagen;
+        thcIcon.classList = malibu["thc-icon"];
+        thcText.innerHTML = malibu["tch-text"] + " THC";
+        principalIcon.classList = malibu["principal-icon"];
+        principalText.innerHTML = malibu["principal-text"];
+        secondaryIcon.classList = malibu["secondary-icon"];
+        secondaryText.innerHTML = malibu["secondary-text"];
         }  );
         
     document.getElementById("sxw").addEventListener("click", function getSw() {
         nombre.innerHTML =  sw.nombre;
-        indica.innerHTML = sw.indica  + "indica";
-        sativa.innerHTML = sw.sativa + "sativa";
+        indica.innerHTML = sw.indica  + " indica";
+        sativa.innerHTML = sw.sativa + " sativa";
         description.innerHTML = sw.descripcion;
         image.src = sw.imagen;
+        thcIcon.classList = sw["thc-icon"];
+        thcText.innerHTML = sw["tch-text"] + " THC";
+        principalIcon.classList = sw["principal-icon"];
+        principalText.innerHTML = sw["principal-text"];
+        secondaryIcon.classList = sw["secondary-icon"];
+        secondaryText.innerHTML = sw["secondary-text"];
         }  );
         
     document.getElementById("blueberry").addEventListener("click", function getBb() {
         nombre.innerHTML =  blueberry.nombre;
-        indica.innerHTML = blueberry.indica  + "indica";
-        sativa.innerHTML = blueberry.sativa + "sativa";
+        indica.innerHTML = blueberry.indica  + " indica";
+        sativa.innerHTML = blueberry.sativa + " sativa";
         description.innerHTML = blueberry.descripcion;
         image.src = blueberry.imagen;
+        thcIcon.classList = blueberry["thc-icon"];
+        thcText.innerHTML = blueberry["tch-text"] + " THC";
+        principalIcon.classList = blueberry["principal-icon"];
+        principalText.innerHTML = blueberry["principal-text"];
+        secondaryIcon.classList = blueberry["secondary-icon"];
+        secondaryText.innerHTML = blueberry["secondary-text"];
         }  );
         
     document.getElementById("y").addEventListener("click", function getY() {
         nombre.innerHTML =  y.nombre;
-        indica.innerHTML = y.indica  + "indica";
-        sativa.innerHTML = y.sativa + "sativa";
+        indica.innerHTML = y.indica  + " indica";
+        sativa.innerHTML = y.sativa + " sativa";
         description.innerHTML = y.descripcion;
         image.src = y.imagen;
+        thcIcon.classList = y["thc-icon"];
+        thcText.innerHTML = y["tch-text"] + " THC";
+        principalIcon.classList = y["principal-icon"];
+        principalText.innerHTML = y["principal-text"];
+        secondaryIcon.classList = y["secondary-icon"];
+        secondaryText.innerHTML = y["secondary-text"];
         }  );
         
     document.getElementById("ak47").addEventListener("click", function getAk() {
         nombre.innerHTML =  ak47.nombre;
-        indica.innerHTML = ak47.indica  + "indica";
-        sativa.innerHTML = ak47.sativa + "sativa";
+        indica.innerHTML = ak47.indica  + " indica";
+        sativa.innerHTML = ak47.sativa + " sativa";
         description.innerHTML = ak47.descripcion;
         image.src = ak47.imagen;
+        thcIcon.classList = ak47["thc-icon"];
+        thcText.innerHTML = ak47["tch-text"] + " THC";
+        principalIcon.classList = ak47["principal-icon"];
+        principalText.innerHTML = ak47["principal-text"];
+        secondaryIcon.classList = ak47["secondary-icon"];
+        secondaryText.innerHTML = ak47["secondary-text"];
         }  );
         
     document.getElementById("platinum").addEventListener("click", function getPlat() {
         nombre.innerHTML =  platinum.nombre;
-        indica.innerHTML = platinum.indica  + "indica";
-        sativa.innerHTML = platinum.sativa + "sativa";
+        indica.innerHTML = platinum.indica  + " indica";
+        sativa.innerHTML = platinum.sativa + " sativa";
         description.innerHTML = platinum.descripcion;
         image.src = platinum.imagen;
+        thcIcon.classList = platinum["thc-icon"];
+        thcText.innerHTML = platinum["tch-text"] + " THC";
+        principalIcon.classList = platinum["principal-icon"];
+        principalText.innerHTML = platinum["principal-text"];
+        secondaryIcon.classList = platinum["secondary-icon"];
+        secondaryText.innerHTML = platinum["secondary-text"];
         }  );
         
     document.getElementById("rcxog").addEventListener("click", function getRc() {
         nombre.innerHTML =  rcxog.nombre;
-        indica.innerHTML = rcxog.indica  + "indica";
-        sativa.innerHTML = rcxog.sativa + "sativa";
+        indica.innerHTML = rcxog.indica  + " indica";
+        sativa.innerHTML = rcxog.sativa + " sativa";
         description.innerHTML = rcxog.descripcion;
         image.src = rcxog.imagen;
+        thcIcon.classList = rcxog["thc-icon"];
+        thcText.innerHTML = rcxog["tch-text"] + " THC";
+        principalIcon.classList = rcxog["principal-icon"];
+        principalText.innerHTML = rcxog["principal-text"];
+        secondaryIcon.classList = rcxog["secondary-icon"];
+        secondaryText.innerHTML = rcxog["secondary-text"];
         }  );
         
     document.getElementById("24kilates").addEventListener("click", function get24k() {
         nombre.innerHTML =  kilates24.nombre;
-        indica.innerHTML = kilates24.indica  + "indica";
-        sativa.innerHTML = kilates24.sativa + "sativa";
+        indica.innerHTML = kilates24.indica  + " indica";
+        sativa.innerHTML = kilates24.sativa + " sativa";
         description.innerHTML = kilates24.descripcion;
         image.src = kilates24.imagen;
-        card.style.transform = "translateY(-350px)";
+        thcIcon.classList = kilates24["thc-icon"];
+        thcText.innerHTML = kilates24["tch-text"] + " THC";
+        principalIcon.classList = kilates24["principal-icon"];
+        principalText.innerHTML = kilates24["principal-text"];
+        secondaryIcon.classList = kilates24["secondary-icon"];
+        secondaryText.innerHTML = kilates24["secondary-text"];
         }  );
         
 
