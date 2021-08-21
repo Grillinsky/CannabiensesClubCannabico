@@ -83,7 +83,7 @@ var secondaryText = document.getElementById("secondaryText");
         "nombre": "Blueberry",
         "indica": "80%",
         "sativa": "20%",
-        "descripcion" : "Sunday x v Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tardeWedding es una combinacion de razas lo que sea",
+        "descripcion" : "El sabor que distingue a l Blueberry es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tardeWedding es una combinacion de razas lo que sea",
         "imagen": "/CSS/imagenes/Plutos Fire.jpg",
         "thc-icon": "fas fa-thermometer-half fa-2x",
         "tch-text": "19%",
@@ -136,17 +136,17 @@ var secondaryText = document.getElementById("secondaryText");
     },
     {
         "id": 8,
-        "nombre": "RC x OG",
+        "nombre": "Red Congolese x OG",
         "indica": "80%",
         "sativa": "20%",
         "descripcion" : "Sunday x Wedding e Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tardes una combinacion de razas lo que sea",
         "imagen": "/CSS/imagenes/ocean.jpg",
         "thc-icon": "fas fa-thermometer-three-quarters fa-2x",
-        "tch-text": "21%",
-        "principal-icon": "",
-        "principal-text":"",
-        "secondary-icon": "",
-        "secondary-text": ""
+        "tch-text": "23%",
+        "principal-icon": "fas fa-battery-full fa-2x",
+        "principal-text":"Energetico",
+        "secondary-icon": "fas fa-bullseye fa-2x",
+        "secondary-text": "Enfocado"
     },
     {
         "id": 9,
