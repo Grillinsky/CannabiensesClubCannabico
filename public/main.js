@@ -41,8 +41,8 @@ var secondaryText = document.getElementById("secondaryText");
         "nombre": "Lemon Haze",
         "indica": "40%",
         "sativa": "60%",
-        "indica-class": "",
-        "sativa-class": "",
+        "indica-class": "percent40",
+        "sativa-class": "percent60",
         "descripcion" : "La Lemon Haze es una bestia de predominancia sativa que tiene una increíble potencia psicoactiva. El pegue producido por la Lemon Haze es cerebral, energizante, induce la contemplación y ofrece momentos de euforia y psicodelia",
         "imagen": "/CSS/imagenes/MembresiaHeavy.jpg",
         "thc-icon": "fas fa-thermometer-three-quarters fa-2x",
@@ -57,8 +57,8 @@ var secondaryText = document.getElementById("secondaryText");
         "nombre": "Malibu",
         "indica": "20%",
         "sativa": "80%",
-        "indica-class": "",
-        "sativa-class": "",
+        "indica-class": "percent20",
+        "sativa-class": "percent80",
         "descripcion" : "La Malibú se creó con un objetivo: proporcionar a los amantes de sativa una variedad que tenga todas las características de esta subespecie de cannabis. Una fumada de Malibú entrega un sabor terroso y amaderado, y generará rápidamente efectos cerebrales y energéticos, lo que tiene como resultado un potente pegue cerebral.",
         "imagen": "/CSS/imagenes/Malibu.png",
         "thc-icon": "fas fa-thermometer-full fa-2x",
@@ -73,8 +73,8 @@ var secondaryText = document.getElementById("secondaryText");
         "nombre": "Sundae x Wedding",
         "indica": "40%",
         "sativa": "60%",
-        "indica-class": "",
-        "sativa-class": "",
+        "indica-class": "percent40",
+        "sativa-class": "percent60",
         "descripcion" : "Sunday x Wedding es una combinacion de las razas Sundae Driver y Wedding Cake, los efectos de calmantes y balanceados de la primera y los sabores mandarina y terrozos de la segunda hacen de ésta una combinación imperdible ",
         "imagen": "/CSS/imagenes/Exotic.jpg",
         "thc-icon": "fas fa-thermometer-three-quarters fa-2x",
@@ -89,8 +89,8 @@ var secondaryText = document.getElementById("secondaryText");
         "nombre": "Blueberry",
         "indica": "80%",
         "sativa": "20%",
-        "indica-class": "",
-        "sativa-class": "",
+        "indica-class": "percent80",
+        "sativa-class": "percent20",
         "descripcion" : "El sabor que distingue a la Blueberry es mayormente dulce, afrutado con matices florales recuerda a los arándanos y a frutos del bosque. Ofrece un efecto corporal duradero, que es muy relajante pero también aporta ligeras sensaciones de euforia, aliviando el estrés y proporcionando un efecto animado.",
         "imagen": "/CSS/imagenes/Plutos Fire.jpg",
         "thc-icon": "fas fa-thermometer-half fa-2x",
@@ -105,8 +105,8 @@ var secondaryText = document.getElementById("secondaryText");
         "nombre": "Y",
         "indica": "80%",
         "sativa": "20%",
-        "indica-class": "",
-        "sativa-class": "",
+        "indica-class": "percent80",
+        "sativa-class": "percent20",
         "descripcion" : "La Y griega es una raza extremadamente potente. Su efecto empieza con una fuerte sacudida energética que lentamente desencadena en un estado de lucidez y relajación. Mantiene un olor clásico a Haze, que se combina con un ligero toque dulzón que la hace destacar.",
         "imagen": "/CSS/imagenes/MembresiaMedium.jpg",
         "thc-icon": "fas fa-thermometer-full fa-2x",
@@ -121,8 +121,8 @@ var secondaryText = document.getElementById("secondaryText");
         "nombre": "Ak47",
         "indica": "80%",
         "sativa": "20%",
-        "indica-class": "",
-        "sativa-class": "",
+        "indica-class": "percent80",
+        "sativa-class": "percent20",
         "descripcion" : "La AK-47 es una de las mejores variedades del mundo y la preferida de muchos. , Con un intenso aroma picante estilo skunk. Puedes apreciar algunos matices cítricos en su fumada. Con un efecto cerebral constante, excelente para actividades creativas",
         "imagen": "/CSS/imagenes/Ak-47.jpg",
         "thc-icon": "fas fa-thermometer-full fa-2x",
@@ -137,8 +137,8 @@ var secondaryText = document.getElementById("secondaryText");
         "nombre": "Platinum OG",
         "indica": "80%",
         "sativa": "20%",
-        "indica-class": "",
-        "sativa-class": "",
+        "indica-class": "percent80",
+        "sativa-class": "percent20",
         "descripcion" : "Tan preciosa como el metal es el nombre. Con un contenido de THC regularmente de 20%. Con breve, embriagador efecto que se convierte en uno poderoso físico de sedación adecuado para el uso durante la noche y para combatir el dolor, el estrés o la ansiedad, haciendo de este precioso cepa de un sólido sanador.",
         "imagen": "/CSS/imagenes/Prueba.png",
         "thc-icon": "fas fa-thermometer-three-quarters fa-2x",
@@ -153,8 +153,8 @@ var secondaryText = document.getElementById("secondaryText");
         "nombre": "Red Congolese x OG",
         "indica": "80%",
         "sativa": "20%",
-        "indica-class": "",
-        "sativa-class": "",
+        "indica-class": "percent80",
+        "sativa-class": "percent20",
         "descripcion" : "Sunday x Wedding e Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tardes una combinacion de razas lo que sea",
         "imagen": "/CSS/imagenes/ocean.jpg",
         "thc-icon": "fas fa-thermometer-three-quarters fa-2x",
@@ -169,8 +169,8 @@ var secondaryText = document.getElementById("secondaryText");
         "nombre": "24 K",
         "indica": "60%",
         "sativa": "40%",
-        "indica-class": "",
-        "sativa-class": "",
+        "indica-class": "percent60",
+        "sativa-class": "percent40",
         "descripcion" : "La 24k es muy aromática, con un fuerte olor a Kush combinado con notas cítricas frescas, una variedad muy sabrosa que proporciona un delicado humo y una deliciosa experiencia de vaporización. El efecto de esta variedad es muy fuerte, una mezcla de profunda relajación física y una energética euforia",
         "imagen": "/CSS/imagenes/chalkboard.jpg",
         "thc-icon": "fas fa-thermometer-full fa-2x",
@@ -195,7 +195,9 @@ var secondaryText = document.getElementById("secondaryText");
     document.getElementById("lemonHaze").addEventListener("click", function getLh() {
         nombre.innerHTML =  lemonHaze.nombre;
         indica.innerHTML = lemonHaze.indica  + "indica";
+        indica.classList = lemonHaze["indica-class"];
         sativa.innerHTML = lemonHaze.sativa + "sativa";
+        sativa.classList = lemonHaze["sativa-class"];
         description.innerHTML = lemonHaze.descripcion;
         image.src = lemonHaze.imagen;
         thcIcon.classList = lemonHaze["thc-icon"];
@@ -209,7 +211,9 @@ var secondaryText = document.getElementById("secondaryText");
     document.getElementById("malibu").addEventListener("click", function getMali() {
         nombre.innerHTML =  malibu.nombre;
         indica.innerHTML = malibu.indica  + " indica";
+        indica.classList = malibu["indica-class"];
         sativa.innerHTML = malibu.sativa + " sativa";
+        sativa.classList = malibu["sativa-class"];
         description.innerHTML = malibu.descripcion;
         image.src = malibu.imagen;
         thcIcon.classList = malibu["thc-icon"];
@@ -218,12 +222,15 @@ var secondaryText = document.getElementById("secondaryText");
         principalText.innerHTML = malibu["principal-text"];
         secondaryIcon.classList = malibu["secondary-icon"];
         secondaryText.innerHTML = malibu["secondary-text"];
+
         }  );
         
     document.getElementById("sxw").addEventListener("click", function getSw() {
         nombre.innerHTML =  sw.nombre;
         indica.innerHTML = sw.indica  + " indica";
+        indica.classList = sw["indica-class"];
         sativa.innerHTML = sw.sativa + " sativa";
+        sativa.classList = sw["sativa-class"];
         description.innerHTML = sw.descripcion;
         image.src = sw.imagen;
         thcIcon.classList = sw["thc-icon"];
@@ -237,7 +244,9 @@ var secondaryText = document.getElementById("secondaryText");
     document.getElementById("blueberry").addEventListener("click", function getBb() {
         nombre.innerHTML =  blueberry.nombre;
         indica.innerHTML = blueberry.indica  + " indica";
+        indica.classList = blueberry["indica-class"];
         sativa.innerHTML = blueberry.sativa + " sativa";
+        sativa.classList = blueberry["sativa-class"];
         description.innerHTML = blueberry.descripcion;
         image.src = blueberry.imagen;
         thcIcon.classList = blueberry["thc-icon"];
@@ -251,7 +260,9 @@ var secondaryText = document.getElementById("secondaryText");
     document.getElementById("y").addEventListener("click", function getY() {
         nombre.innerHTML =  y.nombre;
         indica.innerHTML = y.indica  + " indica";
+        indica.classList = y["indica-class"];
         sativa.innerHTML = y.sativa + " sativa";
+        sativa.classList = y["sativa-class"];
         description.innerHTML = y.descripcion;
         image.src = y.imagen;
         thcIcon.classList = y["thc-icon"];
@@ -265,7 +276,9 @@ var secondaryText = document.getElementById("secondaryText");
     document.getElementById("ak47").addEventListener("click", function getAk() {
         nombre.innerHTML =  ak47.nombre;
         indica.innerHTML = ak47.indica  + " indica";
+        indica.classList = ak47["indica-class"];
         sativa.innerHTML = ak47.sativa + " sativa";
+        sativa.classList = ak47["sativa-class"];
         description.innerHTML = ak47.descripcion;
         image.src = ak47.imagen;
         thcIcon.classList = ak47["thc-icon"];
@@ -279,7 +292,9 @@ var secondaryText = document.getElementById("secondaryText");
     document.getElementById("platinum").addEventListener("click", function getPlat() {
         nombre.innerHTML =  platinum.nombre;
         indica.innerHTML = platinum.indica  + " indica";
+        indica.classList = platinum["indica-class"];
         sativa.innerHTML = platinum.sativa + " sativa";
+        sativa.classList = platinum["sativa-class"];
         description.innerHTML = platinum.descripcion;
         image.src = platinum.imagen;
         thcIcon.classList = platinum["thc-icon"];
@@ -293,7 +308,9 @@ var secondaryText = document.getElementById("secondaryText");
     document.getElementById("rcxog").addEventListener("click", function getRc() {
         nombre.innerHTML =  rcxog.nombre;
         indica.innerHTML = rcxog.indica  + " indica";
+        indica.classList = rcxog["indica-class"];
         sativa.innerHTML = rcxog.sativa + " sativa";
+        sativa.classList = rcxog["sativa-class"];
         description.innerHTML = rcxog.descripcion;
         image.src = rcxog.imagen;
         thcIcon.classList = rcxog["thc-icon"];
@@ -307,7 +324,9 @@ var secondaryText = document.getElementById("secondaryText");
     document.getElementById("24kilates").addEventListener("click", function get24k() {
         nombre.innerHTML =  kilates24.nombre;
         indica.innerHTML = kilates24.indica  + " indica";
+        indica.classList = kilates24["indica-class"];
         sativa.innerHTML = kilates24.sativa + " sativa";
+        sativa.classList = kilates24["sativa-class"];
         description.innerHTML = kilates24.descripcion;
         image.src = kilates24.imagen;
         thcIcon.classList = kilates24["thc-icon"];
