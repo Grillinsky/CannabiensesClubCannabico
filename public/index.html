@@ -22,8 +22,8 @@
                 <ul id="navLinksUl">
                     <li class="navLinksLi"><a  href="#Home"> Home</a></li>
                     <li class="navLinksLi"><a href="#Razas"> Razas</a></li>
-                    <li class="navLinksLi"><a href="#Conocenos">Conocenos</a></li>
-                    <li class="navLinksLi"><a href="#Contacto"> Contactanos</a></li>
+                    <!-- <li class="navLinksLi"><a href="#conocenos">Conocenos</a></li> -->
+                    <li class="navLinksLi"><a href="#contacto"> Contactanos</a></li>
                 </ul>
             </div>
         </nav>
@@ -32,14 +32,14 @@
         <!-- Club Cannabico Cannabienses estilizado en Cooper Black -->
         <section class="home" id="Home">
             <!-- Foto de plantas / plantacion + pequeña historia sobre el club -->
-            <div class="historiaLeft">
+            <div class="historiaLeft slide-in-blurred-bottom">
                 <h2>Tu Club Cannábico con <span class="sombra"><br> Conciencia Ambiental</span>
                 </h2><!--  leaf Icon -->
             </div>
             <div class="historiaCenter circle">
                 <h2>Primer club<br> <span class="zeroPercent">0</span> <span> %</span><br> impacto cero</h2>
             </div>
-            <div class="historiaRight">
+            <div class="historiaRight slide-in-blurred-bottom">
                 <h2>Nuestro Compromiso</h2>
                 <p>100% de nuestros fertilizantes de origen natural. <br>
                 100% de nuestros sustratos de orígen local. <br>
@@ -76,7 +76,7 @@
                 <img id="image" class="cardImg" src="/CSS/imagenes/Malibu.png" alt="Malibu">
                 <div class="cardDescription">
                     <div class="indicaSativa">
-                        <span class="indicaClass" id="indica">50% indica</span><span class="sativaClass" id="sativa">50% sativa</span>
+                        <span class="indicaClass" id="indica">indica</span><span class="sativaClass" id="sativa">sativa</span>
                     </div>
                     <p id="descriptionText">La Malibu es una hibrida de genetica Indica dominante única. Su sabor es mayormente dulce, con tonos amargos, citricos y mentolados. Recomendamos esta cepa para fumar a la tarde</p>
 
@@ -136,8 +136,8 @@
 </div> -->
         </section>
 
-        <section class="conocenos" id="conocenos">
-            <!-- Foto y pequeña historia de rodri y nico -->
+        <!-- <section class="conocenos" id="conocenos">
+            -- Foto y pequeña historia de rodri y nico --
             <div id="rodri" class="conocenosCard">
                 <img src="/CSS/imagenes/Avatar_Rodrigo_2.png" alt="Imagen de Rodrigo, fundador del Club" class="conocenosCardImg circle">
                 <div class="conocenosCardDescription">
@@ -152,16 +152,16 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo quaerat pariatur eius veritatis corrupti quas, quisquam quia praesentium? Qui ullam magnam minima pariatur provident explicabo! Omnis distinctio quasi voluptatem?</p>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="contacto" id="contacto">
-            <h3>¿Querés formar parte de Cannabienses?</h3>
+            <h3>¿Querés ser socix de Cannabienses?</h3>
             <div class="neon"><h2>HAY VACANTES</h2></div>
 
             <!-- Formulario de contacto, cartel de "HAY VACANTE" -->
             <div class="formulario">
-                <form action="">
+                <form novalidate="novalidate" id="formularioContacto">
                     
-                    <input aria-label="Email text input" type="text" name="correoInput" id="correoInput" placeholder="Ingresa tu Correo Electronico"><button type="submit">Enviar</button>
+                    <input aria-label="Email text input" type="text" name="correoInput" id="correoInput" placeholder="Ingresa tu Correo"><button type="submit">Enviar</button>
                 </form>
             </div>
             <div class="redes" id="redes"><!-- Fotos / link a instagram -->
@@ -183,24 +183,62 @@
             </div>
         </div>
         <div class="datosClub">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, dolorum.</p>
+            <ul>
+                <li>Asociación Civil Club Cannabico Cannabienses</li>
+                <li>Habilitación IRCCA 2018</li>
+                <li>Canelones, Uruguay</li>
+            </ul>
         </div>
     </footer>
 
+    <!-- <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-analytics.js";
+        import {getDatabase, ref, set, child, update, remove}
+        from "https://www.gstatic.com/firebasejs/9.2.0/firebase-database.js"
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAYTlPPjaB7qw5EF4Cumb5rPRPrjfY4bgc",
+          authDomain: "club-cannabico-cannabienses.firebaseapp.com",
+          databaseURL: "https://club-cannabico-cannabienses-default-rtdb.firebaseio.com",
+          projectId: "club-cannabico-cannabienses",
+          storageBucket: "club-cannabico-cannabienses.appspot.com",
+          messagingSenderId: "642631473089",
+          appId: "1:642631473089:web:d56954dd854b65a426c140",
+          measurementId: "G-8X8LK55M0V"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const dc = getDatabase();
+      </script> -->
 
+      <script src="/contacto.js" type="module"></script>
+<!-- SI NO FUNCA ES DESDE ACA HASTA  -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/8.7.1/firebase-app.js"></script>
+<!-- <script src="/__/firebase/8.7.1/firebase-app.js"></script>  -->
+<!-- <script src="/__/firebase/8.7.1/firebase-database.js"></script> -->
+
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/8.7.1/firebase-analytics.js"></script>
+<!-- <script src="/__/firebase/8.7.1/firebase-analytics.js"></script>  -->
 
 <!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+<!-- <script src="/__/firebase/init.js"></script> -->
+
+<!-- ACA -->
+
+
     <script src="https://kit.fontawesome.com/37b6b13bc4.js" crossorigin="anonymous"></script>
 
-    <script src="/main.js">
+    <script src="/main.js"></script> 
 
-    </script> 
 </body>
 </html>
